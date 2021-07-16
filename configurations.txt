@@ -1,0 +1,36 @@
+lokal ISTD
+--epoch
+10
+--path
+D:\yuni\BA\data\ISTD_Dataset\train\
+--dataset_name
+istd
+
+
+remote ISTD:
+--epoch
+20
+--path
+/home/fiona.kullmann/data/ISTD_Dataset/train/
+----dataset_name
+istd
+
+lokal PSM:
+--epoch
+10
+--path
+C:\Users\Fiona\PycharmProjects\portrait-shadow-manipulation\example_out\
+--dataset_name
+psm
+--model_name
+unet
+
+
+
+test:
+--input_path
+D:\yuni\BA\data\shadow\
+--out_path
+C:\Users\Fiona\PycharmProjects\aaa\dataset\testRes\
+--model_path
+C:\Users\Fiona\PycharmProjects\aaa\trained_models\unet_on_psm20.pth
